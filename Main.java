@@ -256,13 +256,17 @@ class Hotel
     static void features(int i)
     {
         switch (i) {
-            case 1:System.out.println("Number of double beds : 1\nAC : Yes\nFree breakfast : Yes\nCharge per day:4000 ");
+            case 1:System.out.println("Number of double beds : 1\nNumber of single beds: 1\nAC : Yes\nFree breakfast : Yes\nCharge per day:5800 ");
                 break;
-            case 2:System.out.println("Number of double beds : 1\nAC : No\nFree breakfast : Yes\nCharge per day:3000  ");
+            case 2:System.out.println("Number of double beds : 1\nNumber of single beds: 1\nAC : No\nFree breakfast : Yes\nCharge per day:4800 ");
                 break;
-            case 3:System.out.println("Number of single beds : 1\nAC : Yes\nFree breakfast : Yes\nCharge per day:2200  ");
+            case 3:System.out.println("Number of double beds : 1\nAC : Yes\nFree breakfast : Yes\nCharge per day:4000 ");
                 break;
-            case 4:System.out.println("Number of single beds : 1\nAC : No\nFree breakfast : Yes\nCharge per day:1200 ");
+            case 4:System.out.println("Number of double beds : 1\nAC : No\nFree breakfast : Yes\nCharge per day:3000  ");
+                break;
+            case 5:System.out.println("Number of single beds : 1\nAC : Yes\nFree breakfast : Yes\nCharge per day:2200  ");
+                break;
+            case 6:System.out.println("Number of single beds : 1\nAC : No\nFree breakfast : Yes\nCharge per day:1200 ");
                 break;
             default:
                 System.out.println("Enter valid option");
@@ -544,7 +548,7 @@ public class Main {
         System.out.println("\nEnter your choice :\n1.Display room details\n2.Display room availability \n3.Book\n4.Order food\n5.Checkout\n6.Exit\n");
         ch = sc.nextInt();
         switch(ch){
-            case 1: System.out.println("\nChoose room type :\n1.Luxury Double Room \n2.Deluxe Double Room \n3.Luxury Single Room \n4.Deluxe Single Room\n");
+            case 1: System.out.println("\nChoose room type :\n1.Luxury Triple Room \n2.Deluxe Triple Room\n3.Luxury Double Room\n4.Deluxe Double Room \n5.Luxury Single Room \n6.Deluxe Single Room\n");
                     ch2 = sc.nextInt();
                     Hotel.features(ch2);
                 break;
