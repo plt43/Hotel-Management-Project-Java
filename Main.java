@@ -70,6 +70,32 @@ class Doubleroom extends Singleroom implements Serializable
         this.gender2=gender2;
     }
 }
+class Tripleroom extends Doubleroom implements Serializable
+{
+    String name3;
+    String contact3;
+    String gender3; 
+
+    Tripleroom()
+    {
+        this.name="";
+        this.name2="";
+        this.name3="";
+    }
+    Tripleroom(String name,String contact,String gender,String name2,String contact2,String gender2,
+    String name3,String contact3,String gender3)
+    {
+        this.name=name;
+        this.contact=contact;
+        this.gender=gender;
+        this.name2=name2;
+        this.contact2=contact2;
+        this.gender2=gender2;
+        this.name3=name3;
+        this.contact3=contact3;
+        this.gender3=gender3;
+    }
+}
 class NotAvailable extends Exception
 {
     @Override
